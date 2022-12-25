@@ -1,0 +1,62 @@
+● What is Emmet?
+
+Emmet is a free add-on for your text editor that allows you to type shortcuts that are then expanded into full pieces of code. By using Emmet, email designers type less, saving both keystrokes and time when building a campaign. Also, relying on Emmet’s autocompletion means fewer typos and missing tags, leading to more robust emails.
+
+● Difference between a Library and Framework?
+          
+1.	It comprises of lot of APIs , compilers , support programs , libraries etc.	
+
+    It is a collection of helper modules , classes , objects , functions , pre-written code , etc.
+
+2.	It is difficult to replace frameworks.	
+
+    A library is easy to be replaced with another library.
+
+3.	A framework development requires a lot of code that decrease performance and increase the load time.	
+
+    Building a library requires less code , so there is better performance and fast load time.
+
+4.	Including framework smoothly into an existing project is impossible.	
+
+    Libraries can be integrated easily into existing projects to add some specific functionality.
+
+5.	Its example are AngularJS , Spring , NodeJS , etc.	
+    
+    Its example are JQuery , React JS , etc.
+
+● What is CDN? Why do we use it?
+
+A content delivery network (CDN) refers to a geographically distributed group of servers which work together to provide fast delivery of Internet content.
+
+A CDN allows for the quick transfer of assets needed for loading Internet content including HTML pages, javascript files, stylesheets, images, and videos.
+
+Benefits:
+
+1. Improving website load times
+2. Reducing bandwidth costs through caching
+3. Increasing content availability and redundancy
+4. Improving website security
+
+● Why is React known as React?
+
+React was developed for applications (Facebook) that have constantly changing data. Since React is a front-end framework or the “View” in MVC, this means that as the user clicks around and changes the app’s data, the view should “react” or change with those user events. User events being mouse clicks, typing, submitting a form.
+
+● What is crossorigin in script tag?
+
+The purpose of crossorigin attribute is used to share the resources from one domain to another domain. Basically, it is used to handle the CORS request. It is used to handle the CORS request that checks whether it is safe to allow for sharing the resources from other domains.
+
+● What is diference between React and ReactDOM
+
+React library is responsible for creating views and ReactDOM library is responsible to actually render UI in the browser.
+
+● What is difference between react.development.js and react.production.js files via CDN?
+
+
+
+The development build is used - as the name suggests - for development reasons. You have Source Maps, debugging and often times hot reloading ability in those builds.
+
+The production build, on the other hand, runs in production mode which means this is the code running on your client's machine. The production build runs uglify and builds your source files into one or multiple minimized files. It also extracts CSS and images and of course any other sources you're loading with Webpack. There's also no hot reloading included. Source Maps might be included as separate files depending on your webpack devtool settings.
+
+● What is async and defer?
+
+Async downloads and executes JavaScript as soon as it's available, while defer attribute waits until the HTML document has been parsed before downloading and executing any external scripts.
