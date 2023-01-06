@@ -1,0 +1,10 @@
+div.header {
+    display: flex;
+    justify-content: space-around;
+}
+div.header div.logo img {
+    width: 100px;
+}
+div.header div.user img {
+    width: 50px;
+}

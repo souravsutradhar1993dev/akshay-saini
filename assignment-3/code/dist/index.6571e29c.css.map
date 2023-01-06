@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;;AAIA;;;;AAGA","sources":["assets/css/header.css"],"sourcesContent":["div.header {\r\n    display: flex;\r\n    justify-content: space-around;\r\n}\r\ndiv.header div.logo img {\r\n    width: 100px;\r\n}\r\ndiv.header div.user img {\r\n    width: 50px;\r\n}"],"names":[],"version":3,"file":"index.6571e29c.css.map","sourceRoot":"/__parcel_source_root/"}
