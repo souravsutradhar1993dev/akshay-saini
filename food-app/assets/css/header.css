@@ -1,0 +1,14 @@
+div.logo img {
+    width: 300px;
+}
+div.header {
+    display: flex;
+    justify-content: space-between;
+}
+div.nav-items ul.nav-items-lists {
+    list-style-type: none;
+    display: flex;
+}
+div.nav-items ul.nav-items-lists li {
+    padding: 10px;
+}

@@ -1,0 +1,45 @@
+
+Is JSX mandatory for React?
+
+No. JSX is not manadatory. We can rather use React.createElement to create the elements.
+
+Is ES6 mandatory for React?
+
+No. ES6 is not manadatory at all. We can write react code without using it.
+
+<code>{TitleComponent}</code> vs <code>{<TitleComponent/>}</code> vs <code>{<TitleComponent></TitleComponent>}</code> in JSX
+How can I write comments in JSX?
+
+{/* comment here */}
+
+What is <React.Fragment></React.Fragment> and <></> ?
+
+In react when we return JSX from a component, we need to return a single parent JSX unless it will generate error and can not render components. So we have to wrap the JSX with a HTML element and return it or we can wrap it with react fragment. So react fragment is basically a component provided by react. We can use this component to wrap JSX with <React.Fragment></React.Fragment> or we can use the short form <></> provided by JSX.
+
+What is Virtual DOM?
+
+Virtual DOM is a representation of DOMs using tree data structure. This is not actual DOM but a representation of it.
+
+What is Reconciliation in React?
+
+Reconciliation is a process in react which uses diff algorithm to diff between trees. Whenever there's a change placed in the DOM, internally it uses diff algorithm to calculate which tree needs to be updated and it only updates that particular DOM avoiding the render process from parent.  
+
+What is React Fiber?
+
+React Fiber is the new reconciliation engine introduced in react 16. It optimize some performance like animations in react. Earlier react uses stack conciliation which was synchronous. But in fiber it has two phases one is render phase and the other one is commit phase. Here the render phase is asynchronous. So it can run some process in the background and user can interact with the UI without feeling the lag.
+
+Why we need keys in React? When do we need keys in React?
+
+React use keys to make the children with same tags differentiable. Whenever there's a change placed, react uses its diff algorithm to diff one tree with another to determine which parts needs to be updated. If there are identical tags in the parent dom and if we want to insert a tag in the first order of the children present under the parent, then react needs to render the whole parent which is expensive. It is happening because react can not diffrentiate the identacal tags. So to identify the tag where the new tag needs to be put in, react uses unique key for every child of the parent. 
+
+Can we use index as keys in React?
+
+We can but it is not recommended. We should only use index as keys when the list of items are static. In the dynamic list of items, when we add or remove items to the list, react will get confused which properties belongs to which mapped component.
+
+What is props in React?
+
+As we know a component is basically a function in the end, the props are nothing but an arguments which are passed through component and we can get that as params in the component declaration.
+
+What is a Config Driven UI ?
+	 
+Config Driven UI is a software design pattern where we build different reusable components of a web app and pass a json blueprint to the site and configure the site in the run time with the reusable components. 
