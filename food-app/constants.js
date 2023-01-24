@@ -1,7 +1,6 @@
-import RestaurantCard from "./RestaurantCard";
-import '../assets/css/restaurant-list.css';
+export const IMG_CDN_URI = 'https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/';
 
-const restaurantLists = [
+export const restaurantLists = [
     {
       "type": "restaurant",
       "data": {
@@ -1805,13 +1804,3 @@ const restaurantLists = [
       "subtype": "basic"
     }
 ];
-
-const RestaurantList = () => (
-    <div className="restaurant-list">
-        {restaurantLists.map(item => (
-            <RestaurantCard {...item.data} key={item.data.id} />
-        ))}
-    </div>
-);
-
-export default RestaurantList;

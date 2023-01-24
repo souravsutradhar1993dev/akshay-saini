@@ -1,0 +1,66 @@
+div.logo img {
+  width: 300px;
+}
+
+div.header {
+  justify-content: space-between;
+  display: flex;
+}
+
+div.nav-items ul.nav-items-lists {
+  list-style-type: none;
+  display: flex;
+}
+
+div.nav-items ul.nav-items-lists li {
+  padding: 10px;
+}
+
+div.restaurant-list {
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+}
+
+div.restaurant-card {
+  width: 25%;
+  margin: 30px;
+  transition: all .3s;
+  box-shadow: 0 4px 8px #0003;
+}
+
+div.restaurant-card:hover {
+  box-shadow: 0 8px 16px #0003;
+}
+
+div.restaurant-card div.restaurant-image img {
+  width: 100%;
+}
+
+div.restaurant-card div.restaurant-content {
+  padding: 10px 16px;
+}
+
+div.restaurant-card div.restaurant-content div.restaurant-heading span.restaurant-title {
+  font-weight: 900;
+  display: block;
+}
+
+div.restaurant-card div.restaurant-content div.restaurant-heading span.restaurant-cuisines {
+  margin-top: 8px;
+  font-size: 14px;
+  display: block;
+}
+
+div.restaurant-card div.restaurant-content div.restaurant-sub-content {
+  justify-content: space-between;
+  margin-top: 8px;
+  display: flex;
+}
+
+div.restaurant-card div.restaurant-content div.restaurant-offer {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=index.af3187e0.css.map */
