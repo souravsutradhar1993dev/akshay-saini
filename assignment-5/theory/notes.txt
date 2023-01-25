@@ -1,0 +1,19 @@
+#1. What is the difference between "Named" Export, "Default" export and "* as" export?
+
+"Named" Export => By using this export, we can export multiple modules per file. To import, we need to use curly braces and need to use the same module name in those curly braces.
+
+"Default" Export => By using this export, we can only export one module per file. We don't need to use curly braces here for import and also we can use any other during import.
+
+"* as" Export => Using this export, we can import all the named export by defining a js object and we can access any module using '.' operator into it.
+
+#2. What is the importance of config.js file?
+
+In config.js file, we can define all the constant variables and can use it wherever we need it throughout the components by just "Named" exporting this. It helps in code redundancy.
+
+#3. What are React Hooks?
+
+React Hooks are just a normal javascript functions where we can put the reusable functionality of a component and use it throughout the components. Hooks can be stateful.
+
+#4. Why do we need a "useState" Hook?
+
+We need "useState" Hook to declare react state variables and use those state variables to maintain the state of a component.

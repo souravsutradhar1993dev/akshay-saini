@@ -27684,7 +27684,7 @@ $RefreshReg$(_c, "RestaurantCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../assets/css/restaurant-card.css":"8Mvgw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../constants":"8eIVP"}],"8Mvgw":[function() {},{}],"8eIVP":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../../constants":"8eIVP","../assets/css/restaurant-card.css":"8Mvgw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8eIVP":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "IMG_CDN_URI", ()=>IMG_CDN_URI);
@@ -29315,6 +29315,6 @@ const restaurantLists = [
     }
 ];
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"k077G":[function() {},{}]},["1xC6H","e3CPO","2Ew96"], "2Ew96", "parcelRequire1e81")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8Mvgw":[function() {},{}],"k077G":[function() {},{}]},["1xC6H","e3CPO","2Ew96"], "2Ew96", "parcelRequire1e81")
 
 //# sourceMappingURL=index.7826abd7.js.map
