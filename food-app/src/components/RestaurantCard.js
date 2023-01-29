@@ -10,7 +10,7 @@ const RestaurantCard = ({name, cloudinaryImageId, cuisines, avgRating, deliveryT
             <div className='restaurant-content'>
                 <div className="restaurant-heading">
                     <span className="restaurant-title">{name}</span>
-                    <span className="restaurant-cuisines">{cuisines.join(',')}</span>
+                    <span className="restaurant-cuisines">{cuisines ? cuisines.join(',') : ''}</span>
                 </div>
                 <div className="restaurant-sub-content">
                     <span className="restaurant-rating">{avgRating}</span>

@@ -1,0 +1,91 @@
+#1. What is a Microservice?
+
+Microservice is an architectural style that structures an application as a collection of services.
+
+The advantages of it are:
+    Single responsibilities
+    Independently deployble
+    Highly maintainable and testable
+    Loosely coupled
+    Owned by small team
+
+Also as we break the application into different services so we can choose different tech stacks for different services which will be best fit.
+
+#2. What is  Monolith architecture?
+
+Monolith architecture is like big container wherein all the software components of an app are assembed together and tightly coupled. Each component is fully dependent on each other.
+
+The disadvantages of it are:
+    It is difficult to maintain the large and complex applications because they are dependent on each other
+    Inflexible - difficult to adopt new technologies
+    Unreliable - If one service goes down, then it would affect other services as well
+
+#3. What is the difference between Monolith and Microservice?
+
+    Monolith architecture is built as one large system and usually shares one codebase.
+    Microservice architecture is built as small Independent module.
+
+    Monolith architecture is tightly coupled.
+    Microservice architecture is loosely coupled.
+
+    It is not easy to scale and maintain on demand in monolith architecture.
+    It is easy to scale and maintain on demand in microservice architecture.
+
+#4. Why do we need a useEffect Hook?
+
+In react when there's a change in the state or props, the component re-renders itself and trigger the reconciliation process. If we want to run a function like fetching data from API on component render, we can define it inside the component. But the problem is as long as there's a change in states or props, the component will re-render itself and as a result the function will get called on each render. To overcome this problem, here we need useEffect Hook to run that function after the first render placed on page load. Also we can trigger the function inside useEffect on specific changes in states. 
+
+#5. What is Optional Chaining?
+
+The Optional Chaining (?.) operator accesses an object's property or calls a function. If the object accessed or function called is undefined or null, then it will return undefined instead of throwing an error.
+
+#6. What is Shimmer UI?
+
+Shimmer UI resembles the page's actual UI, so users will understand how quicky the web or mobile loads will load even before the content has shown up. It gives an idea to the users what about to come and what's happening when the page takes 3-5 seconds to load.
+
+It perceives the users that the page is loading fast. It increases conversion ration.
+
+if we use normal loader over shimmer ui then the things suddenly loaded with content in the site and this is somewhat to some extent is annoying for eyes.
+
+#7. What is the difference between JS expression and JS statement
+
+A JS expression is a bit of code which produces a value.
+JS statement can be called instructions for the computer to do something.
+
+JS statement would consist of many JS expression.
+
+We can pass a JS expression as an argument to a function as it produces value, we can not do the same with JS statement.
+
+#8. What is Conditional Rendering, explain with a code example
+
+Conditional Rendering in React works the same way the condition works in javascript. We can use "if" or ternary operator to render the component conditionally.
+
+Lets take a example 
+
+const Home = () => <h1>Home</h1> //creating home component
+const About = () => <h1>About</h1> //creating about component
+
+const App = () => isLoggedIn ? <Home /> : <About /> //creating App component using conditional Rendering
+
+#9. What is CORS?
+
+CORS is mechanism or more specifically we can say a web standard obeyed by the browsers where the browsers disregards all the requests from a site of a certain domain to any different domain/protocol/port/subdomain. It will throw an error when we try send request to an API with different domain. 
+
+To overcome this, a preflight mechanism is followed. A preflight options call with additional headers has been made by the browser before the API call. Then it's server's responsibility to verify the request and set some additional header and let browsers know the request is safe.
+
+The additional http headers set by the server are 
+
+Access-Control-Allow-Origin: * //Allow all domain 
+Access-Control-Allow-Origin: https://google.com //Allow only the google domain 
+
+Access-Control-Allow-Methods: GET, POST
+
+#10. What is async and await? 
+
+The async and await keywords in JS enable asynchronous, promise-based behaviour to be written in a cleaner style avoiding the need to configure explicitly promise chains.
+
+To use the await keyword in a statement, the function must be declared with async keyword.
+
+#11. What is the use of `const json = await data.json();` in  getRestaurants()
+
+It is waiting for the promise to get resolved and put the json data to json constant.

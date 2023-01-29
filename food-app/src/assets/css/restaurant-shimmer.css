@@ -1,0 +1,19 @@
+.restaurant-shimmer {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 330px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 30px;
+}
+
+.restaurant-shimmer .restaurant-image {
+    width: 100%;
+    background-color: rgb(230, 226, 226);
+    height: 200px;
+}
+
+.restaurant-shimmer .restaurant-content {
+    height: 130px;
+    width: 100%;
+}
