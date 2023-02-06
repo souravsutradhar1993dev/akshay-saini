@@ -3,6 +3,7 @@ div.restaurant-card {
     transition: 0.3s;
     width: 25%;
     margin: 30px;
+    cursor: pointer;
 }
 
 div.restaurant-card:hover {

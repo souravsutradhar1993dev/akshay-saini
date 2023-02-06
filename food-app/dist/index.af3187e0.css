@@ -16,12 +16,26 @@ div.nav-items ul.nav-items-lists li {
   padding: 10px;
 }
 
+.restaurant-details {
+  display: flex;
+}
+
+div.restaurant-list {
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+}
+
+.restaurant-shimmer-section {
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+}
+
 .restaurant-shimmer {
   width: 25%;
   height: 330px;
-  flex-direction: column;
   margin: 30px;
-  display: flex;
   box-shadow: 0 4px 8px #0003;
 }
 
@@ -36,14 +50,9 @@ div.nav-items ul.nav-items-lists li {
   width: 100%;
 }
 
-div.restaurant-list {
-  flex-wrap: wrap;
-  justify-content: center;
-  display: flex;
-}
-
 div.restaurant-card {
   width: 25%;
+  cursor: pointer;
   margin: 30px;
   transition: all .3s;
   box-shadow: 0 4px 8px #0003;

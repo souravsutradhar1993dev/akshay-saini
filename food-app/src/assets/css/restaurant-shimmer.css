@@ -1,6 +1,9 @@
-.restaurant-shimmer {
+.restaurant-shimmer-section {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.restaurant-shimmer {
     width: 25%;
     height: 330px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);

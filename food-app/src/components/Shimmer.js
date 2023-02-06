@@ -2,7 +2,7 @@ import '../assets/css/restaurant-shimmer.css';
 
 const Shimmer = () => {
     return (
-        <>
+        <div className='restaurant-shimmer-section'>
             {
                 Array(10).fill("").map((e, index) => (
                     <div className="restaurant-shimmer" key={index}>
@@ -22,7 +22,7 @@ const Shimmer = () => {
                     </div>
                 ))
             }    
-        </>
+        </div>
     )
 }
     

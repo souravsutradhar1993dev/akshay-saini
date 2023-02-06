@@ -1,9 +1,8 @@
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.png';
 import '../assets/css/header.css';
 
 const Header = () => {
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
     const Logo = (
         <div className="logo">
             <img alt="logo" src={logo} />
@@ -13,12 +12,12 @@ const Header = () => {
     const NavItems = (
         <div className="nav-items">
             <ul className="nav-items-lists">
-                <li>Home</li>
-                <li>Offers</li>
-                <li>Restaurant Lists</li>
-                <li>Orders</li>
-                <li>Cart</li>
-                <li><button className='nav-button' onClick={() => setIsLoggedIn(!isLoggedIn)}>{isLoggedIn ? 'Logout' : 'Login'}</button></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/offers">Offers</Link></li>
+                <li><Link to="/restaurant-lists">Restaurant Lists</Link></li>
+                <li><Link to="/orders">Orders</Link></li>
+                <li><Link to="/cart">Cart</Link></li>
+                <li><Link to="/login"><button className='nav-button'>Login</button></Link></li>
             </ul>
         </div>
     );

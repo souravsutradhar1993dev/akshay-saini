@@ -1,0 +1,29 @@
+#1. What are various ways to add images into our App? Explain with code examples
+
+If we use a image from third party site, then we can just place the image link where we need it and it will ne reflected. 
+
+<img src="https://reactjs.org/logo-og.png" alt="React Image" />
+
+If we want to store the image into our app and use it, then we need to import the image from the path with a custom variable name. We can place the custom variable to with inside {} as we do for normal js variables inside jsx.
+
+import logo from '../path-to-image/logo.png';
+
+<img src={logo} alt="React Image" />
+
+#2. What would happen if we do console.log(useState())?
+
+useState() returns an array with a local state variable and a set function to update state variable. So if we console.log it, then it will show an array of state variable (which will be undefined as the variable will be initialized with "undefined" during memory creation phase) and a function.
+
+How will useEffect behave if we don't add a dependency array ?
+
+If we don't add a dependency array in useEffect, then on each and every state change and props change in the particular component, the useEffect callback function will get called after the component render perform.
+
+#3. What is SPA?
+
+SPA stands for Single Page Application. In this, we use Client Side Routing instead of Server Side Routing which is being used in earlier traditional websites. Using this, when we navigate to any route, we don't need to reload whole site with all the resources, we just need to render specific dom elements. It reduces page load time, faster user experience, less usage of server resource.
+
+#4. What is difference between Client Side Routing and Server Side Routing?
+
+Server Side Routing => When a user clicks on a route link to go to a new page, a whole new GET request sent to server, it responds with a new document, completely disregarding the old page altogetther. This results in a full page refresh, which causes unnecessary data and resource to be loaded again again.
+
+Client Side Routing => When a user clicks on a route link to go to a new page, the new GET request to server is prevented by the javascript. The URL in the browser has been changed by the javascript, internally Javascript renders the dom element which needs to be updated. There could be a request placed to server to fetch data which is being used during the render process. But it avoids loading unnecessary data or resource which is common throughout the site. 
