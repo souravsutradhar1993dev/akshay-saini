@@ -4,12 +4,13 @@ import Header from './src/components/Header';
 import Footer from './src/components/Footer';
 import Home from './src/components/Home';
 import Offers from './src/components/Offers';
-import RestaurantList from "./src/components/RestaurantList";
 import Orders from "./src/components/Orders";
 import Cart from "./src/components/Cart";
 import Error from "./src/components/Error";
 import RestaurantMenu from "./src/components/RestaurantMenu";
 import Login from "./src/components/Login";
+import About from "./src/components/About";
+import Profile from "./src/components/Profile";
 
 const AppLayout = () => (
     <>
@@ -30,12 +31,18 @@ const appRouter = createBrowserRouter([
                 element: <Home />,
             },
             {
-                path: '/offers',
-                element: <Offers />,
+                path: '/about',
+                element: <About />,
+                children: [
+                    {
+                        path: 'profile',
+                        element: <Profile />
+                    }
+                ]
             },
             {
-                path: '/restaurant-lists',
-                element: <RestaurantList />,
+                path: '/offers',
+                element: <Offers />,
             },
             {
                 path: '/restaurants/:id',

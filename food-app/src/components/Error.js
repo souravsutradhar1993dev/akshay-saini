@@ -5,8 +5,8 @@ const Error = () => {
     console.log(err)
     return (
         <>
-            <h2>Oops!!!</h2>
-            <p>Page Not Found</p>
+            <h2>{err.status}</h2>
+            <p>{err.statusText}</p>
         </>
     );
 };

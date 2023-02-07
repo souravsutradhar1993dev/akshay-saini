@@ -1,0 +1,49 @@
+#1. How do you create Nested Routes react-router-dom cofiguration
+
+We have to declare the children object inside the target route in createBrowserRouter hook. Inside children object we need to declare array of objects and this objects will contain nested route details.
+
+#2. Read abt createHashRouter, createMemoryRouter from React Router docs.
+
+createHashRouter => It is useful when we are unable to configure web server to direct all trafics to the react application. Instead of using normal URLs, we can use hash(#) portion of the url to manage it.
+
+createMemoryRouter => It is useful for non browser environment. Instead of using browser history, this createMemoryRouter uses its own history stack in memory.
+
+#3. What is the order of life cycle method calls in Class Based Components
+
+MOUNT CYCLE
+    RENDER PHASE
+        constructor
+        render
+    COMMIT PHASE
+        componentDidMount
+
+UPDATE CYCLE
+    RENDER PHASE
+        setState
+        new props
+    COMMIT PHASE
+        componentDidUpdate
+
+UNMOUNT CYCLE
+    COMMIT PHASE
+        componentWillUnmount    
+
+#4. Why do we use componentDidMount?
+
+If we want to perform something like async operation after render phase during component render process, We will use componentDidMount. Whetever functionality (It can be syncronous or asynchronous) we delared inside componentDidMount, The react will perform it after render phase so that the component render render itself faster without any dependency and then perform the componentDidMount and update the DOM accordingly.
+
+#5. Why do we use componentWillUnmount? Show with example
+
+There are some occurances when we need to cleanup some functionalities like invalidating timers, cancelling network requests after the componenent is unmounted or destroyed. This cleanup process has been done during unmounting cycle.
+
+componentWillUnmount has been invoked during the unmounting cycle i.e. when the component is unmounted and destroyed. So we can add the cleanup functionalities inside the componentWillUnmount.
+
+#6. Why do we use super(props) in constructor?
+
+super is referred to parent class constructor. When we extend a class from a parent class, we need to call the super() in beginning of child class constructor so that we have access to the variables which are initilized in parent class constructor.
+
+Now props is optional in super(props) as a parameter, because if we don't declare it in constructor, we can still use this.props in render method. But yes, we can not use this.props in constructor if we don't use super(props). The reason for it, react internally assign props to component class instance right after calling constructor so that we can use it in render method.
+
+#7. Why can't we have the callback function of useEffect async?
+
+Because React's useEffect hook expects a cleanup function returned from it which will get called when the component unmounts. If the callback function in useEffect would be declared as async then the return cleanup function will never get called.
