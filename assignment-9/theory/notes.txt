@@ -1,0 +1,26 @@
+#1. When and why do we need lazy()?
+
+When we want to achieve "On demand loading" of a component, then we use "lazy" from react core package.
+
+There will be some occurances when we don't want to load every component in our app during the initial loading of the app. Because it will be resource heavy and time taking if we would load all the components on the first go. So we split the code and load it when requires. For example, if there are 5 routes in an app, user generally comes in the home page for first time, so we can load only the home component on the first go and then if user clicks on other routes, we can load that components on demand basis.
+
+#2. What is suspense?
+
+suspense is a wrapper component provided by react library. It is used for wrapping the lazy component and we can specify what will be displayed when the lazy component loads on demand.
+
+#3. Why we got this error : A component suspended while responding to synchronous input. This will cause the UI to be replaced with a loading indicator. To fix, updates that suspend should be wrapped with startTransition? How does suspense fix this error?
+
+This error comes when react try to render a component which is lazy loaded. So basically react suspends the render and throws this error on the browser console.
+
+We can fix it by using suspense as a wrapper component to lazy component, so that react can avoid suspending the render and waits for the component to load on demand.
+
+#4. Advantages and disadvantages of using this code splitting pattern?
+
+Advantages => Using the code splitting pattern, the initial loading time of the app can be decreased. Without it, the app will be resource heavy as it will load all the component on first go. It is very much helpful for larger production app.
+
+Disadvantages => As the codes are splitted and load on demand basis by the user, it can take some time to load the lazy loaded component and that can affect the user experience. We can avoid this, for a small app as it won't affect much in the initial loading time of the app. 
+
+#5. When do we and why do we need suspense?
+
+When we import components dynamically, the component won't get loaded in the initial loading. So when user requested for the component then it will get loaded on demand. But react will try to render it as it has been loaded initially and it suspended as it hasn't been loaded.
+Here we need Suspense as wrapper component to lazy component, so that react won't suspend the operation and will wait until it loads. Also we can perform anything like playing a loader with suspense in the page when it's loading the lazy component.

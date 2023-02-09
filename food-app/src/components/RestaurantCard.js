@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import {IMG_CDN_URI} from "../../constants";
+import {IMG_CDN_URI} from "../constants";
 import '../assets/css/restaurant-card.css';
 
 const RestaurantCard = ({id, name, cloudinaryImageId, cuisines, avgRating, deliveryTime, costForTwoString, aggregatedDiscountInfo}) => {
